@@ -5,19 +5,35 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "zygote_injection_toolkit"
-version = "0.1"
+name = "zygote-injection-toolkit"
+version = "0.3.0"
 dependencies = [
   "pure-python-adb@git+https://github.com/Anonymous941/pure-python-adb",
-  "aidl@git+https://github.com/MatrixEditor/aidl-parser"
+  "aidl@git+https://github.com/MatrixEditor/aidl-parser",
+  "rich>=13.0.0",
+  "colorama>=0.4.6"
 ]
-requires-python = ">=3"
-description = "Toolkit for exploiting Android zygote injection (CVE-2024-31317)"
+requires-python = ">=3.8"
+description = "Advanced toolkit for exploiting Android Zygote injection (CVE-2024-31317) for forensics and research."
 readme = "README.md"
-license = "GPL-3.0-or-later"
-classifiers = [
-  "Programming Language :: Python"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "Zygote Injection Toolkit Contributors" }
 ]
+keywords = ["android", "exploit", "zygote", "injection", "cve-2024-31317", "forensics", "root", "oem-unlock"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/Anonymous941/zygote-injection-toolkit"
+
+[project.scripts]
+zygote-punch = "zygote_injection_toolkit.__main__:main"
 
 [tool.setuptools.package-data]
 zygote_injection_toolkit = ["*.aidl"]
