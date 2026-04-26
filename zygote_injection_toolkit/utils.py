@@ -3,7 +3,7 @@ from rich.theme import Theme
 from rich.logging import RichHandler
 import logging
 import sys
-TOOLKIT_THEME = Theme({'info': 'cyan', 'warning': 'yellow', 'error': 'red', 'success': 'green', 'highlight': 'magenta', 'dim': 'grey'})
+TOOLKIT_THEME = Theme({'info': 'cyan', 'warning': 'yellow', 'error': 'red', 'success': 'green', 'highlight': 'magenta', 'dim': 'grey50'})
 console = Console(theme=TOOLKIT_THEME)
 
 def setup_logging(level=logging.INFO):
