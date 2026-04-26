@@ -4,6 +4,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+> [!IMPORTANT]
+> This toolkit is a refined fork of the original work by **[Anonymous941](https://github.com/Anonymous941/zygote-injection-toolkit)**.
+
 An advanced command-line utility for security researchers and forensics professionals to exploit the **Android Zygote Injection** vulnerability (CVE-2024-31317). This toolkit allows for system-level access (UID 1000) on vulnerable Android devices, enabling private app data extraction, system modification, and bootloader unlocking bypasses.
 
 > [!WARNING]
