@@ -11,7 +11,8 @@ dependencies = [
   "pure-python-adb@git+https://github.com/Anonymous941/pure-python-adb",
   "aidl@git+https://github.com/MatrixEditor/aidl-parser",
   "rich>=13.0.0",
-  "colorama>=0.4.6"
+  "colorama>=0.4.6",
+  "six"
 ]
 requires-python = ">=3.8"
 description = "Advanced toolkit for exploiting Android Zygote injection (CVE-2024-31317) for forensics and research."
